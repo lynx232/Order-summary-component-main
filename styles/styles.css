@@ -1,0 +1,305 @@
+/* || ASSETS || */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* || MODERN RESET
+        Credits go to:
+            Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/ || */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* || STYLESHEET || */
+:root {
+    --BRIGHT-BLUE: hsl(245, 75%, 52%);
+    --DARK-BLUE: hsl(223, 47%, 23%);
+    --PALE-BLUE: hsl(225, 100%, 94%);
+    --VERY-PALE-BLUE: hsl(224, 23%, 55%);
+    --WHITE: hsl(0, 0%, 100%);
+    --ACTIVE-STATES: hsl(245, 83%, 68%);
+}
+
+/* || || MOBILE S || || */
+/* || BODY || */
+body {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background: var(--PALE-BLUE);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#background {
+    position: fixed;
+    background: url(/images/pattern-background-mobile.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+}
+
+#card {
+    position: relative;
+    background: var(--WHITE);
+    border-radius: 20px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 10px 13px 15px -3px rgba(0,0,0,0.1);
+}
+
+/* || HEADER || */
+#hero {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* || MAIN || */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--DARK-BLUE);
+    font-size: 1.375rem;
+    font-weight: 900;
+    letter-spacing: 0;
+    margin-top: 2rem;
+}
+
+#subheader {
+    color: var(--VERY-PALE-BLUE);
+    font-size: 0.938rem;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0;
+    margin: 1rem 2rem 1.5rem;
+}
+
+#subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background: #F7F9FF;
+    border-radius: 11px;
+    width: 15rem;
+    padding: 1rem;
+    margin: 0;
+
+}
+
+#icon-music {
+    width: 3rem;
+    height: 3rem;
+}
+
+h2 {
+    color: var(--DARK-BLUE);
+    font-size: 0.875rem;
+    font-weight: 900;
+    letter-spacing: 0;
+}
+
+#plan {
+    margin: 0 0.5rem;
+}
+
+#price {
+    color: var(--VERY-PALE-BLUE);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+#change {
+    color: var(--BRIGHT-BLUE);
+    font-size: 0.813rem;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#payment {
+    background-color: var(--BRIGHT-BLUE);
+    border: none;
+    border-radius: 11px;
+    color: var(--WHITE);
+    font-size: 0.938rem;
+    font-weight: 900;
+    letter-spacing: 0;
+    padding: 0.938rem 3rem;
+    margin: 1.25rem 0;
+    box-shadow: 0px 35px 25px -3px rgba(0,0,0,0.1);
+}
+
+#cancel {
+    color: var(--VERY-PALE-BLUE);
+    font-size: 0.938rem;
+    font-weight: 900;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+/* || FOOTER || */
+
+#attribution {
+    position: relative;
+    font-size: 0.9rem;
+}
+
+#attribution a {
+    text-decoration: none;
+}
+
+/* || || MOBILE M -> MOBILE L || || */
+/* || MAIN || */
+@media (min-width: 375px ) {
+    #card {
+        max-width: 20.438rem;
+    }
+
+    #boxes {
+        width: 100%;
+        padding: 0 1.25rem;
+    }
+
+    #subscription {
+        width: 100%;
+        padding: 1rem;
+        justify-content: space-between;
+    }
+
+    #plan {
+        margin: 0 3.125rem 0 1.25rem;
+    }
+
+    #payment {
+        width: 100%;
+        padding: 0.938rem 4rem;
+    }
+}
+
+/* || || TABLET -> ULTRAWIDE || || */
+/* || BODY || */
+@media (min-width: 768px ) {
+    #background {
+        background: url(/images/pattern-background-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background
+    }
+
+    #card {
+        max-width: 450px;
+    }
+
+/* || MAIN || */  
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    #subheader {
+        font-size: 1rem;
+        margin: 1rem 3rem 1.5rem;
+    }
+
+    #subscription {
+        padding: 1.5rem;
+    }
+
+    #boxes {
+        padding: 0 3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    #price {
+        font-size: 1rem;
+    }
+
+    #change {
+        font-size: 0.875rem;
+    }
+}
+
+/* || || ACTIVE STATES || || */
+#change {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#change:hover {
+    text-decoration: none;
+    color: var(--ACTIVE-STATES);
+}
+
+#payment {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#payment:hover {
+    background-color: var(--ACTIVE-STATES);
+}
+
+#cancel {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#cancel:hover {
+    color: var(--DARK-BLUE);
+}
+
+#attribution a {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#attribution a:hover {
+    color: var(--DARK-BLUE);
+    font-weight: 700;
+}
