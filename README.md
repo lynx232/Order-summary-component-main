@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/lynx232/Order-summary-component-main.git)
+- Solution URL: (https://www.frontendmentor.io/solutions/order-summary-component-main-iYLwi3I3ye)
 - Live Site URL: (https://gp-order-summary-component-main.netlify.app)
 
 ## My process
