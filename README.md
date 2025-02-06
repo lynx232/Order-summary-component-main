@@ -27,10 +27,10 @@ Users should be able to:
 ### Screenshots
 
 - Mobile
-![](./screenshots/Mobile.png)  
+![](./screenshots/Mobile.png)
 
  - Desktop
-![](./screenshots/Desktop.png) 
+![](./screenshots/Desktop.png)
 
  - Ultrawide
 ![](./screenshots/Ultrawide.png)
